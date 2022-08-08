@@ -1,0 +1,223 @@
+/* 各个页面相同的样式表：头，尾部 */
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    height: 52px;
+    background-color: #333 ;
+}
+
+.shortcut .wrapper ul{
+    float: right;
+}
+
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper li a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper li a span{
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+
+    vertical-align: middle;
+}
+
+.shortcut .wrapper li:last-child a{
+    border: 0;
+}
+
+/* 头部 */
+.header{
+    margin: 30px auto;
+    height: 70px;
+    
+}
+
+.logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+    margin-right: 40px;
+}
+
+.logo h1{
+    width: 207px;
+    height: 70px;
+}
+
+/* logo搜索引擎的优化做法： */
+.logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 由于设置文件，SEO有更多关键字？即使字号为0，权重也提升 */
+    font-size: 0;
+}
+
+.nav{
+    float: left;
+    height: 70px;
+}
+
+.nav li{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.nav li a{
+    padding-bottom: 7px;
+}
+
+.nav li a:hover{
+    border-bottom: 1px solid #27ba9b;
+    color: #27ba9b;
+
+}
+
+
+
+.search{
+    position: relative;
+    float: left;
+    width: 172px;
+    height: 30px;
+    margin-left: 34px;
+    margin-top: 24px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search span{
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -69px;
+}
+
+.search input{
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+.car{
+    float: left;
+    margin-left: 15px;
+    margin-top: 19px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -63px;
+    position: relative;
+}
+
+.car span{
+    position: absolute;
+    /* display: block; */
+    width: 21px;
+    height: 20px;
+    background-color: #e26237;
+    border-radius: 10px;
+    top: -4px;
+    right: -3px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* 版权区域 */
+.footer{
+    height: 342px;
+    background-color: #333;
+}
+
+.footer .wrapper{
+    width: 1393px;
+}
+
+.footer .top{
+    height: 175px;
+    border-bottom: 1px solid #434343;
+    padding-top: 59px;
+    padding-left: 106px;
+}
+
+.footer .top li{
+    position: relative;
+    float: left;
+    width: 195px;
+    height: 58px;
+    margin-right: 300px;
+    line-height: 58px;
+}
+
+.footer .top li:last-child{
+    margin-right: 0;
+}
+/* 伪元素添加的标签  行内 */
+.footer .top li::before{
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+
+.footer .top li span{
+    font-size: 28px;
+    color: white;
+    margin-left: 77px;
+}
+
+.footer .top li:nth-child(2)::before{
+    background-position: -129px 0px;
+}
+
+.footer .top li:nth-child(3)::before{
+    background-position: -64px 0px;
+}
+
+.footer .bottom{
+    padding-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.footer .bottom a{
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .bottom p{
+    padding-bottom: 20px;
+}
